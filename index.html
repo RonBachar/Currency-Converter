@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+     
+      <form id="currency-form">
+        <div>
+          <label for="amount">Amount:</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            placeholder="Enter amount"
+          />
+        </div>
+        <div>
+          <label for="from">From:</label>
+          <input
+            type="text"
+            id="from"
+            name="from"
+            placeholder="Enter currency code"
+          />
+        </div>
+        <div>
+          <label for="to">To:</label>
+          <input
+            type="text"
+            id="to"
+            name="to"
+            placeholder="Enter currency code"
+          />
+        </div>
+
+        <button type="submit" id='submit'>Convert</button>
+      </form>
+      <span>Result: </span>
+      <span id="result"></span>
+    </div>
+
+    <script src="currency-calc.js"></script>
+  </body>
+</html>
