@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
   fetch(`https://api.exchangerate-api.com/v4/latest/${from}`)
     .then((response) => response.json())
     .then((data) => {
-      const rate = data.rates[to];
+      const rate = data.rates[to]; 
       const convertedAmount = rate * amount;
       console.log(convertedAmount);
       result.textContent = `${amount} ${from} = ${convertedAmount.toFixed(
